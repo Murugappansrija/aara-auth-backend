@@ -23,3 +23,6 @@ app.use('/api', routes);
 app.listen(PORT, () => {
   console.log(`Server is running on: http://localhost:${PORT}/`);
 });
+app.get('/',async(req,res)=>{
+  res.json('Welcom to AARA authentication server')
+})
